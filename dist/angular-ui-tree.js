@@ -756,6 +756,7 @@
 
               //Check if it or it's parents has a 'data-nodrag' attribute
               el = angular.element(e.target);
+              isUiTreeRoot = null;
               while (el && el[0] && el[0] !== element && !isUiTreeRoot) {
 
                 //Checking that I can access attributes.
